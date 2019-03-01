@@ -1,0 +1,76 @@
+https://github.com/daneWilliams/jquery.dropdown/wiki/Callbacks
+
+Dane Williams edited this page on 29 Dec 2016 · 4 revisions
+Almost every action performed by the dropdown is preceded and followed by a callback event, allowing for modifications to the dropdown behaviour and integration with other scripts.
+
+Each event has a corresponding :before event which occurs before the event takes place, for example, dropdown.open:before.
+
+Open dropdown
+dropdown.open
+Triggered when the dropdown is opened
+$(element).on( 'dropdown.open', function( e, dropdown ) {
+
+   ...
+
+});
+Close dropdown
+dropdown.close
+Triggered when the dropdown is closed
+$(element).on( 'dropdown.close', function( e, dropdown ) {
+
+   ...
+
+});
+Resize
+dropdown.resize
+Triggered when the dropdown is resized
+Returns the menu being resized
+$(element).on( 'dropdown.resize', function( e, menu, dropdown ) {
+
+   ...
+
+});
+Reset
+dropdown.reset
+Triggered when the dropdown is reset
+$(element).on( 'dropdown.reset', function( e, dropdown ) {
+
+   ...
+
+});
+Open menu
+dropdown.menu.open
+Triggered when a menu is opened
+Returns the target menu and current menu
+$(element).on( 'dropdown.menu.open', function( e, menu, cur, dropdown ) {
+
+   ...
+
+});
+Close menu
+dropdown.menu.close
+Triggered when a menu is close
+Returns the current menu and target menu
+$(element).on( 'dropdown.menu.close', function( e, cur, menu, dropdown ) {
+
+   ...
+
+});
+Select item
+dropdown.select
+Triggered when an item is selected
+Returns the target item and current/previous selected item
+$(element).on( 'dropdown.select', function( e, item, prev, dropdown ) {
+
+   ...
+
+});
+Deselect item
+dropdown.deselect
+Triggered when an item is deselected
+Returns the item to be deselected
+$(element).on( 'dropdown.deselect', function( e, item, dropdown ) {
+
+   ...
+
+});
