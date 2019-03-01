@@ -3613,14 +3613,12 @@ ul, li {
 /*--error-page--*/
 .error-page {
   position: relative;
-  min-height: -webkit-calc(100vh + 90px);
-  min-height: calc(100vh + 90px);
   background: #f2f2f2; }
   .error-page .red-decor {
     left: auto;
     right: -300px;
-    width: -webkit-calc((100% - 1200px)/2 + 792px);
-    width: calc((100% - 1200px)/2 + 792px);
+    width: -webkit-calc((100% - 1200px)/2 + 740px);
+    width: calc((100% - 1200px)/2 + 740px);
     -webkit-transform: skewX(-30deg);
     -ms-transform: skewX(-30deg);
     transform: skewX(-30deg); }
